@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "aWUA7HsILVcdV/Rk9BRAtICZ/izT24KN9i2FruB1tTNdtsQ79nV1JtZ3gDxJt1WJ8pDuSvJlBa5C9ksnRNv6Gw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\parveen.kumar\\source\\repos\\Pokedex\\Pokedex\\Pokedex.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\parveen.kumar\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512",
+    "C:\\Users\\parveen.kumar\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
