@@ -1,11 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Pokedex.Client.Utils;
 
 namespace Pokedex
 {
@@ -20,7 +15,11 @@ namespace Pokedex
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.ConfigureServices((hostContext, services) =>
+                    {
+                        ApplicationConfig.Config = hostContext.Configuration;
+                    })
+                    .UseStartup<Startup>();
                 });
     }
 }

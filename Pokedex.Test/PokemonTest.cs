@@ -1,29 +1,27 @@
-using Microsoft.AspNetCore.Mvc;
 using Moq;
 using NUnit.Framework;
 using Pokedex.Controllers;
-using Pokedex.DataAccess.Models;
-using Pokedex.DataAccess.Repositories.Interfaces;
+using Pokedex.Services.Repositories.Interfaces;
 using Pokedex.Dto.Response;
 
 namespace Pokedex.Test
 {
-    
+
     public class PokemonTest
     {
         private  PokemonController _controller;
-        private IPokemonSpecies getPokemonSpecies()
+        private IPokemonService getPokemonDataInformation()
         {
-            Mock<IPokemonSpecies> mockObject = new Mock<IPokemonSpecies>();
-            mockObject.Setup(m => m.GetAllPokemonInformation("mewtwo")).Returns(new PokemonInformation{Name = "mewtwo"});
+            Mock<IPokemonService> mockObject = new Mock<IPokemonService>();
+            mockObject.Setup(m => m.GetAllPokemonInformation("mewtwo")).Returns(new PokedexResponseDto(){Name = "mewtwo"});
             return mockObject.Object;
         }
 
         [SetUp]
         public void Setup()
         {
-            IPokemonSpecies pokemonSpecies = getPokemonSpecies();
-            _controller = new PokemonController(pokemonSpecies);
+            IPokemonService pokemonService = getPokemonDataInformation();
+            _controller = new PokemonController(pokemonService);
         }
 
         [Test]

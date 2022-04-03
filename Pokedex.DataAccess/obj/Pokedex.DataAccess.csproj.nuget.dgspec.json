@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\parveen.kumar\\source\\repos\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj": {}
+    "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\parveen.kumar\\source\\repos\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj": {
+    "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\parveen.kumar\\source\\repos\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj",
         "projectName": "Pokedex.DataAccess",
-        "projectPath": "C:\\Users\\parveen.kumar\\source\\repos\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj",
+        "projectPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj",
         "packagesPath": "C:\\Users\\parveen.kumar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\parveen.kumar\\source\\repos\\Pokedex\\Pokedex.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\parveen.kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"

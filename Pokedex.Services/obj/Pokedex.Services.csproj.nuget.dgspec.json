@@ -1,0 +1,130 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.Services\\Pokedex.Services.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj",
+        "projectName": "Pokedex.DataAccess",
+        "projectPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\parveen.kumar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\parveen.kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.Services\\Pokedex.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.Services\\Pokedex.Services.csproj",
+        "projectName": "Pokedex.Services",
+        "projectPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.Services\\Pokedex.Services.csproj",
+        "packagesPath": "C:\\Users\\parveen.kumar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\parveen.kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

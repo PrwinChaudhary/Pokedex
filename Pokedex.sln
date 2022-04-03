@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokedex", "Pokedex\Pokedex.csproj", "{F01E9867-D731-41A1-8D68-5BB8FE96E81C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokedex.DataAccess", "Pokedex.DataAccess\Pokedex.DataAccess.csproj", "{81AB24E8-71D4-4047-83A5-3EA389E3AA52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokedex.Services", "Pokedex.Services\Pokedex.Services.csproj", "{81AB24E8-71D4-4047-83A5-3EA389E3AA52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokedex.Test", "Pokedex.Test\Pokedex.Test.csproj", "{CC28EA89-F1E6-40A9-98C9-165A7F559C49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokedex.Test", "Pokedex.Test\Pokedex.Test.csproj", "{CC28EA89-F1E6-40A9-98C9-165A7F559C49}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokedex.DataAccess", "Pokedex.DataAccess\Pokedex.DataAccess.csproj", "{8D7FB357-138F-439E-97F5-EE624B24CA84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{CC28EA89-F1E6-40A9-98C9-165A7F559C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC28EA89-F1E6-40A9-98C9-165A7F559C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC28EA89-F1E6-40A9-98C9-165A7F559C49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D7FB357-138F-439E-97F5-EE624B24CA84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D7FB357-138F-439E-97F5-EE624B24CA84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D7FB357-138F-439E-97F5-EE624B24CA84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D7FB357-138F-439E-97F5-EE624B24CA84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

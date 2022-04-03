@@ -1,0 +1,15 @@
+C:\Users\parveen.kumar\source\Pokedex\Pokedex.Services\obj\Debug\net5.0\Pokedex.Services.csprojAssemblyReference.cache
+C:\Users\parveen.kumar\source\Pokedex\Pokedex.Services\obj\Debug\net5.0\Pokedex.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\parveen.kumar\source\Pokedex\Pokedex.Services\obj\Debug\net5.0\Pokedex.Services.AssemblyInfoInputs.cache
+C:\Users\parveen.kumar\source\Pokedex\Pokedex.Services\obj\Debug\net5.0\Pokedex.Services.AssemblyInfo.cs
+C:\Users\parveen.kumar\source\Pokedex\Pokedex.Services\obj\Debug\net5.0\Pokedex.Services.csproj.CoreCompileInputs.cache
+C:\Users\parveen.kumar\source\Pokedex\Pokedex.Services\bin\Debug\net5.0\Pokedex.Services.deps.json
+C:\Users\parveen.kumar\source\Pokedex\Pokedex.Services\bin\Debug\net5.0\Pokedex.Services.dll
+C:\Users\parveen.kumar\source\Pokedex\Pokedex.Services\bin\Debug\net5.0\ref\Pokedex.Services.dll
+C:\Users\parveen.kumar\source\Pokedex\Pokedex.Services\bin\Debug\net5.0\Pokedex.Services.pdb
+C:\Users\parveen.kumar\source\Pokedex\Pokedex.Services\bin\Debug\net5.0\Pokedex.DataAccess.dll
+C:\Users\parveen.kumar\source\Pokedex\Pokedex.Services\bin\Debug\net5.0\Pokedex.DataAccess.pdb
+C:\Users\parveen.kumar\source\Pokedex\Pokedex.Services\obj\Debug\net5.0\Pokedex.Services.csproj.CopyComplete
+C:\Users\parveen.kumar\source\Pokedex\Pokedex.Services\obj\Debug\net5.0\Pokedex.Services.dll
+C:\Users\parveen.kumar\source\Pokedex\Pokedex.Services\obj\Debug\net5.0\ref\Pokedex.Services.dll
+C:\Users\parveen.kumar\source\Pokedex\Pokedex.Services\obj\Debug\net5.0\Pokedex.Services.pdb

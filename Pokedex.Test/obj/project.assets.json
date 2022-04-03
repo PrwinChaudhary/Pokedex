@@ -55,6 +55,59 @@
           "lib/netstandard1.3/Microsoft.DotNet.InternalAbstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.Configuration/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "6.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
       "Microsoft.NET.Test.Sdk/16.5.0": {
         "type": "package",
         "dependencies": {
@@ -944,6 +997,18 @@
           "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
       "System.Runtime.Extensions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1194,7 +1259,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.13",
-          "Pokedex.DataAccess": "1.0.0"
+          "Pokedex.Services": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Pokedex.dll": {}
@@ -1210,6 +1275,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "6.0.1",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -1217,6 +1283,19 @@
         },
         "runtime": {
           "bin/placeholder/Pokedex.DataAccess.dll": {}
+        }
+      },
+      "Pokedex.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Pokedex.DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Pokedex.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pokedex.Services.dll": {}
         }
       }
     }
@@ -1294,6 +1373,88 @@
         "lib/netstandard1.3/Microsoft.DotNet.InternalAbstractions.dll",
         "microsoft.dotnet.internalabstractions.1.0.0.nupkg.sha512",
         "microsoft.dotnet.internalabstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration/6.0.0": {
+      "sha512": "tq2wXyh3fL17EMF2bXgRhU7JrbO3on93MRKYxzz4JzzvuGSA1l0W3GI9/tl8EO89TH+KWEymP7bcFway6z9fXg==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.6.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
+      "sha512": "qWzV9o+ZRWq+pGm+1dF+R7qTgTYoXvbyowRoBxQJGfqTpqDun2eteerjRQhq5PQ/14S+lqto3Ft4gYaRyl4rdQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.EnvironmentVariables/6.0.1": {
+      "sha512": "pnyXV1LFOsYjGveuC07xp0YHIyGq7jRq5Ncb5zrrIieMLWVwgMyYxcOH0jTnBedDT4Gh1QinSqsjqzcieHk1og==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.environmentvariables/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.EnvironmentVariables.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.xml",
+        "microsoft.extensions.configuration.environmentvariables.6.0.1.nupkg.sha512",
+        "microsoft.extensions.configuration.environmentvariables.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/6.0.0": {
+      "sha512": "9+PnzmQFfEFNR9J2aDTfJGGupShHjOuGw4VUv+JB044biSHrnmCIMD+mJHmb2H7YryrfBEXDurxQ47gJZdCKNQ==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Primitives.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/Microsoft.Extensions.Primitives.dll",
+        "lib/net461/Microsoft.Extensions.Primitives.xml",
+        "lib/net6.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net6.0/Microsoft.Extensions.Primitives.xml",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.NET.Test.Sdk/16.5.0": {
@@ -3642,6 +3803,31 @@
         "system.runtime.nuspec"
       ]
     },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Runtime.Extensions/4.3.0": {
       "sha512": "guW0uK0fn5fcJJ1tJVXYd7/1h5F+pea1r7FLSOz/f8vPEqbR2ZAknuRDvTQ8PzAilDveOxNjSfr0CHfIQfFk8g==",
       "type": "package",
@@ -4562,6 +4748,11 @@
       "type": "project",
       "path": "../Pokedex.DataAccess/Pokedex.DataAccess.csproj",
       "msbuildProject": "../Pokedex.DataAccess/Pokedex.DataAccess.csproj"
+    },
+    "Pokedex.Services/1.0.0": {
+      "type": "project",
+      "path": "../Pokedex.Services/Pokedex.Services.csproj",
+      "msbuildProject": "../Pokedex.Services/Pokedex.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4571,7 +4762,7 @@
       "NUnit >= 3.13.3",
       "NUnit3TestAdapter >= 3.16.1",
       "Pokedex >= 1.0.0",
-      "Pokedex.DataAccess >= 1.0.0"
+      "Pokedex.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4580,11 +4771,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\parveen.kumar\\source\\repos\\Pokedex\\Pokedex.Test\\Pokedex.Test.csproj",
+      "projectUniqueName": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.Test\\Pokedex.Test.csproj",
       "projectName": "Pokedex.Test",
-      "projectPath": "C:\\Users\\parveen.kumar\\source\\repos\\Pokedex\\Pokedex.Test\\Pokedex.Test.csproj",
+      "projectPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.Test\\Pokedex.Test.csproj",
       "packagesPath": "C:\\Users\\parveen.kumar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\parveen.kumar\\source\\repos\\Pokedex\\Pokedex.Test\\obj\\",
+      "outputPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\parveen.kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4601,11 +4792,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\parveen.kumar\\source\\repos\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\parveen.kumar\\source\\repos\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj"
+            "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.Services\\Pokedex.Services.csproj": {
+              "projectPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.Services\\Pokedex.Services.csproj"
             },
-            "C:\\Users\\parveen.kumar\\source\\repos\\Pokedex\\Pokedex\\Pokedex.csproj": {
-              "projectPath": "C:\\Users\\parveen.kumar\\source\\repos\\Pokedex\\Pokedex\\Pokedex.csproj"
+            "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex\\Pokedex.csproj": {
+              "projectPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex\\Pokedex.csproj"
             }
           }
         }

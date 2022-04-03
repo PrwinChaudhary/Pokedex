@@ -1,16 +1,13 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Pokedex.DataAccess.Repositories;
 using Pokedex.DataAccess.Repositories.Interfaces;
+using Pokedex.Middlewares;
+using Pokedex.Services.Repositories;
+using Pokedex.Services.Repositories.Interfaces;
 
 namespace Pokedex
 {
@@ -27,7 +24,9 @@ namespace Pokedex
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddTransient<IPokemonSpecies, PokemonSpecies>();
+            services.AddScoped<IPokemonService, PokemonService>();
+            services.AddScoped<IPokeApiClientRepository, PokeApiClientRepository>();
+            services.AddScoped<ITranslationClientRepository, TranslationClientRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +41,8 @@ namespace Pokedex
 
             app.UseAuthorization();
 
+            //custom global exception middleware added
+            app.UseCustomExceptionMiddleware();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
