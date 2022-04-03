@@ -2,10 +2,9 @@
 
 docker stop pokedex-app
 docker rm pokedex-app
-docker run -d --name pokedex-app -p 8089:80 -p 44367:443 \
+docker run -d --name pokedex-app -p 5000:80 \
         -e ASPNETCORE_ENVIRONMENT=Development \
-        -e ASPNETCORE_URLS="https://+;http://+" \
-        -e "ASPNETCORE_HTTPS_PORT=44367" \
+        -e ASPNETCORE_URLS="http://+" \
         -e "ApplicationSettings:McsAppBuild=local" \
         pokedex-app
 		

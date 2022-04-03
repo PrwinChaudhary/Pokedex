@@ -1,0 +1,10 @@
+/Pokedex/bin/Debug
+/Pokedex/obj
+/Pokedex.sln.DotSettings.user
+/Pokedex.DataAccess/bin/Debug
+/Pokedex.DataAccess/obj
+/Pokedex.Services/bin/Debug
+/Pokedex.Services/obj
+/Pokedex.Test/bin/Debug
+/Pokedex.Test/obj
+/.vs/Pokedex
