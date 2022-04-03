@@ -1,7 +1,7 @@
 ﻿using Moq;
 using NUnit.Framework;
 using Pokedex.Controllers;
-using Pokedex.Dto.Response;
+using Pokedex.Services.Response;
 using Pokedex.Services.Repositories.Interfaces;
 
 namespace Pokedex.Test

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace Pokedex.Client.Utils
+namespace Pokedex.DataAccess.Utils
 {
     public static class ApplicationConfig
     {

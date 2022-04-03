@@ -1,4 +1,4 @@
-﻿namespace Pokedex.Dto.Response
+﻿namespace Pokedex.Services.Response
 {
     public class PokedexResponseDto
     {

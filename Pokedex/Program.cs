@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using Pokedex.Client.Utils;
+using Pokedex.DataAccess.Utils;
 
 namespace Pokedex
 {

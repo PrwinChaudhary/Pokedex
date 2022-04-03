@@ -344,19 +344,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\parveen.kumar\\.nuget\\packages\\": {}
+    "C:\\Users\\Parveen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex\\Pokedex.csproj",
+      "projectUniqueName": "F:\\Projects\\Pokedex1\\Pokedex\\Pokedex.csproj",
       "projectName": "Pokedex",
-      "projectPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex\\Pokedex.csproj",
-      "packagesPath": "C:\\Users\\parveen.kumar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex\\obj\\",
+      "projectPath": "F:\\Projects\\Pokedex1\\Pokedex\\Pokedex.csproj",
+      "packagesPath": "C:\\Users\\Parveen\\.nuget\\packages\\",
+      "outputPath": "F:\\Projects\\Pokedex1\\Pokedex\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\parveen.kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Parveen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -370,8 +370,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.Services\\Pokedex.Services.csproj": {
-              "projectPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.Services\\Pokedex.Services.csproj"
+            "F:\\Projects\\Pokedex1\\Pokedex.Services\\Pokedex.Services.csproj": {
+              "projectPath": "F:\\Projects\\Pokedex1\\Pokedex.Services\\Pokedex.Services.csproj"
             }
           }
         }
@@ -409,7 +409,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

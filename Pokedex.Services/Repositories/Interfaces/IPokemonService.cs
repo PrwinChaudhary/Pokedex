@@ -1,4 +1,4 @@
-﻿using Pokedex.Dto.Response;
+﻿using Pokedex.Services.Response;
 
 namespace Pokedex.Services.Repositories.Interfaces
 {

@@ -27,11 +27,17 @@ namespace Pokedex.Middlewares
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Exception occurred: {ex}");
-                await HandleExceptionAsync(httpContext, ex);
+                _logger.LogError($"Exception occurred: {ex}"); // Log Error
+                await HandleExceptionAsync(httpContext, ex); // Call handle exception
             }
         }
 
+        /// <summary>
+        /// Handle Exception Async
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="exception"></param>
+        /// <returns></returns>
         private async Task HandleExceptionAsync(HttpContext context, Exception exception)
         {
             context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;

@@ -15,6 +15,11 @@ namespace Pokedex.Controllers
 
         }
 
+        /// <summary>
+        /// Get Pokemon Basic Information(Name, Description, Habitat, IsLegendary) by name
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         [HttpGet("{name}")]
 
         public ObjectResult Get(string name)
@@ -28,6 +33,11 @@ namespace Pokedex.Controllers
             return new ObjectResult(pokemonResult);
         }
 
+        /// <summary>
+        /// Get Pokemon Basic Information(Name, Description, Habitat, IsLegendary) with Fun Translation of description by name
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         [HttpGet("translated/{name}")]
 
         public ObjectResult GetTranslatedPokemon(string name)

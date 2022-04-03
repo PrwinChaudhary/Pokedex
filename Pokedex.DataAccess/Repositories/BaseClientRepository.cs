@@ -7,14 +7,18 @@ namespace Pokedex.DataAccess.Repositories
 {
     public abstract class BaseClientRepository
     {
-
+        /// <summary>
+        /// Base repository method for all API requests
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="httpRequest"></param>
+        /// <returns></returns>
         protected static async Task<T> SendRequest<T>(HttpRequestMessage httpRequest) where T : new()
         {
             T result = new T();
             HttpResponseMessage response;
             try
             {
-
                 using var httpClient = new HttpClient();
                 response= await httpClient.SendAsync(httpRequest);
             }

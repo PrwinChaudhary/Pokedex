@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj": {}
+    "F:\\Projects\\Pokedex1\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj": {
+    "F:\\Projects\\Pokedex1\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj",
+        "projectUniqueName": "F:\\Projects\\Pokedex1\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj",
         "projectName": "Pokedex.DataAccess",
-        "projectPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\parveen.kumar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\parveen.kumar\\source\\Pokedex\\Pokedex.DataAccess\\obj\\",
+        "projectPath": "F:\\Projects\\Pokedex1\\Pokedex.DataAccess\\Pokedex.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Parveen\\.nuget\\packages\\",
+        "outputPath": "F:\\Projects\\Pokedex1\\Pokedex.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\parveen.kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Parveen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

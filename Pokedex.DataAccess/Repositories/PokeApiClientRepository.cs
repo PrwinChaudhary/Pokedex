@@ -1,4 +1,4 @@
-﻿using Pokedex.Client.Utils;
+﻿using Pokedex.DataAccess.Utils;
 using Pokedex.DataAccess.Models;
 using Pokedex.DataAccess.Repositories.Interfaces;
 using System;
@@ -9,6 +9,11 @@ namespace Pokedex.DataAccess.Repositories
 {
     public class PokeApiClientRepository : BaseClientRepository, IPokeApiClientRepository
     {
+        /// <summary>
+        /// Get Pokemon Basic Information
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public async Task<PokemonInformation> GetPokemonBasicData(string name)
         {
             var url = ApplicationConfig.PokeApiUrl + name;
@@ -18,7 +23,7 @@ namespace Pokedex.DataAccess.Repositories
                 RequestUri = new Uri(url)
             };
 
-            return await SendRequest<PokemonInformation>(request);
+            return await SendRequest<PokemonInformation>(request); // Call Base Repository method and return result
         }
 
     }
