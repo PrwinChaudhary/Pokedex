@@ -1,5 +1,7 @@
 # Welcome to Pokedex
 
+This is Pokedex fun application. Where we are providing some pokemon API to get pokemon details by passing name of pokemon.
+
 -----------------------------------
 -----------------------------------
 
@@ -49,25 +51,35 @@ This command must be used in Pokedex project where we have Pokedex c# project fi
 
 ````
 
-### Use postman or IE browser to test API
+-----------------------------------
+-----------------------------------
 
-# First Http GET Api to get Pokemon basic Information
+# Avaialble API with payload
+Use postman or IE browser to test API
+
+### First Http GET Api to get Pokemon basic Information
 Url - http://localhost:5000/pokemon/mewtwo 
 ```where mewtwo is Pokemon Name```
 
-# Second Http GET Api to get Pokemon basic Information with Fun Translation
+### Second Http GET Api to get Pokemon basic Information with Fun Translation
 Url - http://localhost:5000/pokemon/translated/mewtwo
 ```where mewtwo is Pokemon Name and there are 2 fun translation present - Yoda and Shakespeare based on conditions```
 
 -----------------------------------
 -----------------------------------
 
-## Production Settings needs to be done 
+# Build and Run with Docker - WSL Docker with Ubuntu or Linux
+
+For Docker Build & Run there are 2 files present docker_build_sh and docker_run_local.sh
+
+Go to Path and run these files with linux CLI or copy command from these files and directly run on CLI.
+
+-----------------------------------
+-----------------------------------
+
+# Production Settings needs to be done 
 
 In appsettings.json file - Need to update property - It can be done with docker file or by Jenkins or other CI-CD
 Current "ApplicationEnvironment": "Local" --> to --> "ApplicationEnvironment": "Production"
 
 and Update URL for production API in this file
-
------------------------------------
------------------------------------
