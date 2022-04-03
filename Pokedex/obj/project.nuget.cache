@@ -1,12 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "MR+CWiSw42GR3XgRpI4jztzeM7ADmzEVj9J2ZG0z8KDoiWVxj0xKP54cHUhwMuNZ9wOv4l0N9Qb/cK1CTu1tRg==",
+  "dgSpecHash": "YbT+U1WtpTZrKLh9TVeX2TOLjRct/2TWzK+oNGBZFKdbFpXz1gkyNTR753aTVe3gfFwEF4MgeQql+7Yp3chcIw==",
   "success": true,
   "projectFilePath": "F:\\Projects\\Pokedex1\\Pokedex\\Pokedex.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Parveen\\.nuget\\packages\\aspnetcoreratelimit\\4.0.2\\aspnetcoreratelimit.4.0.2.nupkg.sha512",
+    "C:\\Users\\Parveen\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Parveen\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\Parveen\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Parveen\\.nuget\\packages\\microsoft.extensions.configuration.environmentvariables\\6.0.1\\microsoft.extensions.configuration.environmentvariables.6.0.1.nupkg.sha512",
+    "C:\\Users\\Parveen\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Parveen\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Parveen\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\Parveen\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Parveen\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512",
     "C:\\Users\\Parveen\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",

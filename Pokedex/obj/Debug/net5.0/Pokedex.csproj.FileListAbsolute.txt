@@ -127,3 +127,4 @@ F:\Projects\Pokedex1\Pokedex\obj\Debug\net5.0\Pokedex.dll
 F:\Projects\Pokedex1\Pokedex\obj\Debug\net5.0\ref\Pokedex.dll
 F:\Projects\Pokedex1\Pokedex\obj\Debug\net5.0\Pokedex.pdb
 F:\Projects\Pokedex1\Pokedex\obj\Debug\net5.0\Pokedex.genruntimeconfig.cache
+F:\Projects\Pokedex1\Pokedex\bin\Debug\net5.0\AspNetCoreRateLimit.dll

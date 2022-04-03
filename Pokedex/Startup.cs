@@ -1,3 +1,4 @@
+using AspNetCoreRateLimit;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -23,6 +24,13 @@ namespace Pokedex
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMemoryCache();
+            services.Configure<IpRateLimitOptions>(Configuration.GetSection("IpRateLimiting"));
+            services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
+            services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
+            services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+            services.AddSingleton<IProcessingStrategy, AsyncKeyLockProcessingStrategy>();
+            services.AddInMemoryRateLimiting();
             services.AddControllers();
             services.AddScoped<IPokemonService, PokemonService>();
             services.AddScoped<IPokeApiClientRepository, PokeApiClientRepository>();
@@ -36,7 +44,7 @@ namespace Pokedex
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseIpRateLimiting();
             app.UseRouting();
 
             app.UseAuthorization();
