@@ -51,7 +51,7 @@ namespace Pokedex.Services.Repositories
         public PokedexResponseDto GetPokemonDataWithTranslation(string name)
         {
             var pokemonData = GetAllPokemonInformation(name);
-            if (pokemonData != null)
+            if (pokemonData != null && !string.IsNullOrEmpty(pokemonData.Description))
             {
                 pokemonData = GeTranslationStrategy(pokemonData);
             }

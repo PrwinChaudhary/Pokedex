@@ -15,7 +15,7 @@ namespace Pokedex.DataAccess.Repositories
         /// <returns></returns>
         protected static async Task<T> SendRequest<T>(HttpRequestMessage httpRequest) where T : new()
         {
-            T result = new T();
+            T result = default;
             HttpResponseMessage response;
             try
             {
