@@ -24,6 +24,7 @@ namespace Pokedex
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // IP Rate limit of 50 added
             services.AddMemoryCache();
             services.Configure<IpRateLimitOptions>(Configuration.GetSection("IpRateLimiting"));
             services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
@@ -31,6 +32,8 @@ namespace Pokedex
             services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
             services.AddSingleton<IProcessingStrategy, AsyncKeyLockProcessingStrategy>();
             services.AddInMemoryRateLimiting();
+
+
             services.AddControllers();
             services.AddScoped<IPokemonService, PokemonService>();
             services.AddScoped<IPokeApiClientRepository, PokeApiClientRepository>();

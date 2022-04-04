@@ -83,3 +83,11 @@ In appsettings.json file - Need to update property - It can be done with docker 
 Current "ApplicationEnvironment": "Local" --> to --> "ApplicationEnvironment": "Production"
 
 and Update URL for production API in this file
+
+## What else i would do differently for production API or what tasks are in pipline
+
+1) Authorization and Token Based Authentication.
+2) Rate limit based on Users, currently used IP rate limit of 50.
+3) Versioning of API.
+4) Implement CORS.
+5) Proper Async implementation.
